@@ -1,0 +1,178 @@
+header {
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0px;
+	align-items: center;
+	background-color: #fcfcfc;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.03137254901960784);
+	height: 100px;
+	z-index: 99;
+}
+
+.navul {
+	display: flex;
+	font-size: 20px;
+	color: #707070;
+}
+.logo {
+	margin-left: 50px;
+}
+.navul li{
+	margin-right: 50px;
+}
+.navul a{
+	color: black;
+}
+.coverpic {
+	width: 100%;
+	max-height: 350px;
+	object-fit: cover;
+	margin: 0px auto;
+}
+.cover {
+	margin-top: 110px;
+	padding: 0px 50px;
+	margin-bottom: 100px;
+}
+.recent{
+	margin-top: 110px;
+	padding: 0px 50px;
+}
+.popular {
+	margin-top: 110px;
+	padding: 0px 50px;
+}
+.articles {
+	display: flex;
+	gap: 20px 50px;
+	margin-bottom: 50px;
+}
+.articles img{
+	width: 100%;
+	object-fit: cover;
+	max-height: 190px;
+}
+.article {
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.1607843137254902 );
+	max-width: 30%;
+	max-height: 20%;
+}
+.popular h2{
+	font-size: 25px;
+	margin-bottom: 50px;
+}
+.recent h2{
+	font-size: 25px;
+	margin-bottom: 50px;
+}
+.popular h3{
+	font-size: 20px;
+	margin-left:10px;
+	margin-top: 15px;
+	margin-bottom: 27px; 
+}
+.recent h3{
+	font-size: 20px;
+	margin-left:10px;
+	margin-top: 15px;
+	margin-bottom: 27px; 
+}
+.popular p{
+	font-size: 13px;
+	margin-bottom: 50px;
+	margin-left: 10px;
+}
+.recent p{
+	font-size: 13px;
+	margin-bottom: 50px;
+	margin-left: 10px;
+}
+.popular a{
+	color: #2e2e2e;
+	font-size: 15px;
+	float: right;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	border: 1px solid grey;
+}
+.recent a{
+	color: #2e2e2e;
+	font-size: 15px;
+	float: right;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	border: 1px solid grey;
+}
+.button{
+	margin: 0px auto;
+	width: 9%;
+	margin-bottom: -30px;
+}
+footer {
+	background-color: #2e2e2e;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px;
+}
+.footer h4 {
+	font-size: 14px;
+	color: #f2f2f2;
+	margin-bottom: 12px;
+	font-weight: bold;
+}
+.footer p{
+	color: #f2f2f2;
+	font-size: 12px;
+}
+.footer a{
+	color: #f2f2f2;
+	font-size: 12px;
+}
+.burgerMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: silver;
+}
+.burgerIcon {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+.burgerMenu nav {
+    visibility: hidden;
+    width: 5vw;
+    height: 1vh;
+}
+.burgerMenu:hover nav{
+    visibility: visible;
+}
+
+.burger-ul {
+    background-color: beige;
+}
+.burger-ul li {
+    background-color: darkgray;
+}
+@media screen and (max-width: 320px) {
+    .burgerMenu {
+        display: block;
+    }
+    .navul {
+        display: none;
+    }
+    .logo {
+    	display: none;
+    }
+    .articles {
+    	flex-wrap: wrap;
+    	flex-direction: column;
+    }
+}
+p, h2, h3, h4{
+	max-width: 100%;
+}
