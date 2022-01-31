@@ -56,8 +56,6 @@ header {
 }
 .article {
 	box-shadow: 0px 0px 3px rgba(0,0,0,0.1607843137254902 );
-	max-width: 30%;
-	max-height: 20%;
 }
 .popular h2{
 	font-size: 25px;
@@ -107,8 +105,8 @@ header {
 }
 .button{
 	margin: 0px auto;
-	width: 9%;
 	margin-bottom: -30px;
+	text-align: center;
 }
 footer {
 	background-color: #2e2e2e;
@@ -158,7 +156,7 @@ footer {
 .burger-ul li {
     background-color: darkgray;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 880px) {
     .burgerMenu {
         display: block;
     }
@@ -169,10 +167,41 @@ footer {
     	display: none;
     }
     .articles {
+    	display: flex;
     	flex-wrap: wrap;
     	flex-direction: column;
     }
+
 }
-p, h2, h3, h4{
-	max-width: 100%;
+@media screen and (max-width: 470px) {
+	header{
+		height: auto;
+	}
+	.cover{
+		margin-top: 30px;
+		padding: 0px;
+		margin-bottom: 0px;
+	}
+	.coverpic{
+		width: 100%;
+	}
+	.popular {
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.articles{
+		width: 100%;
+		margin: 0px auto;
+		display: flex;
+		flex-direction: column;
+	}
+	footer {
+		display: flex;
+		justify-content: space-between;
+		padding: 0px;
+		max-width: 100%;
+		padding: 5px;
+		flex-wrap: wrap;
+	}
 }
+
